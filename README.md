@@ -7,8 +7,6 @@
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Running the Application](#running-the-application)
-- [Analytics Implementation](#analytics-implementation)
-- [Additional Notes](#additional-notes)
 
 ## Introduction
 
