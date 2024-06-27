@@ -1,46 +1,52 @@
-# Getting Started with Create React App
+# Agriculture Analytics
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+- [Introduction](#introduction)
+- [Technologies Used](#technologies-used)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Running the Application](#running-the-application)
+- [Analytics Implementation](#analytics-implementation)
+- [Additional Notes](#additional-notes)
 
-In the project directory, you can run:
+## Introduction
 
-### `yarn start`
+This project is an Agriculture Analytics application that performs analytics on the Indian Agriculture dataset provided by NITI Aayog. It displays the analyzed data as tables using Mantine v7 for the UI components.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technologies Used
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **TypeScript**: Programming language for static typing and enhanced tooling.
+- **React**: JavaScript library for building user interfaces.
+- **Create React App (CRA)**: Provides a modern build setup with no configuration.
+- **Yarn**: Dependency manager used instead of npm.
+- **Mantine v7**: React components library for building UI with reduced CSS dependencies.
 
-### `yarn test`
+## Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Before running the application, ensure you have the following installed:
 
-### `yarn build`
+- **Node.js**: Make sure Node.js is installed on your system.
+- **Yarn**: Install yarn for managing dependencies.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    git clone <repository-url>
+    cd agriculture-analytics
+    ```
 
-### `yarn eject`
+2. Install dependencies using Yarn:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    ```bash
+    yarn install
+    ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Running the Application
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To start the application:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+yarn start
