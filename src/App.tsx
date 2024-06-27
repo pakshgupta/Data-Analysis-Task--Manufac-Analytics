@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react';
+import MaxMinProductionTable from './components/MaxMinProductionTable';
+import AvgYieldAreaTable from './components/AvgYieldAreaTable';
+import { processData } from './utils/dataProcessor';
+import parsedData from './utils/dataProcessor';
 
-function App() {
+interface MaxMinProduction {
+  year: number;
+  maxCrop: string;
+  minCrop: string;
+}
+
+interface AvgYieldArea {
+  crop: string;
+  avgYield: number;
+  avgArea: number;
+}
+
+const App: React.FC = () => {
+  const [maxMinProduction, setMaxMinProduction] = useState<MaxMinProduction[]>([]);
+  const [avgYieldArea, setAvgYieldArea] = useState<AvgYieldArea[]>([]);
+
+  useEffect(() => {
+    const { maxProduction, avgYieldArea } = processData(parsedData);
+    setMaxMinProduction(maxProduction);
+    setAvgYieldArea(avgYieldArea);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Agriculture Data Analysis</h1>
+      <h2>Max and Min Production by Year</h2>
+      <MaxMinProductionTable data={maxMinProduction} />
+      <h2>Average Yield and Cultivation Area</h2>
+      <AvgYieldAreaTable data={avgYieldArea} />
     </div>
   );
-}
+};
 
 export default App;
