@@ -42,9 +42,6 @@ Before running the application, ensure you have the following installed:
     yarn install
     ```
 
-## ScreenShorts
-[!Table1](https://ibb.co/YDV5gqx)
-![Table2](https://ibb.co/MN9vNKg)
 
 ## Running the Application
 
